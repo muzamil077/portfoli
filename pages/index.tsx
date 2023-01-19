@@ -4,7 +4,10 @@ import styles from "../styles/Home.module.css";
 import Hireme from "./Hireme";
 import Topbar from "../src/components/Topbar";
 import Hero from "./Hero";
+import Skills from "./Skills";
 import { useEffect } from "react";
+import Services from "./Sevicese";
+import Contact from "./contect";
 
 export default function Home() {
   // useEffect(() => {
@@ -17,8 +20,11 @@ export default function Home() {
   return (
     <>
       <Topbar />
-      <Hero/>
+      {/* <Hero/> */}
+      <Skills/>
+      <Services/>
       <Hireme />
+      <Contact/>
       <footer className="p-3 text-center">
         <h6 className="mb-3">JOHN ALEX</h6>
         <p>codeaprogram © All CopyRights Reserved 2022</p>
