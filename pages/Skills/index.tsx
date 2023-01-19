@@ -1,10 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
+// import content
 import { createElement, useState } from "react";
-import { Model } from "react-model";
 import { content } from "../../utills/Content";
-
-// import Modal from "react-model";
+// import modal package
+// import Modal from "react-modal";
+import Image from "next/image";
 
 const customStyles = {
   content: {
@@ -21,15 +20,12 @@ const customStyles = {
     padding: "2rem",
   },
 };
-
-// Model.setAppElement("#root")
-
+// Modal.setAppElement("#root");
 
 const Skills = () => {
- 
   const { skills } = content;
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [selectSkill, setSelectSkill] = useState(null);
+  const [selectSkill, setSelectSkill] = useState("hello");
 
   function openModal() {
     setIsOpen(true);
@@ -41,12 +37,12 @@ const Skills = () => {
 
   return (
     <section className="min-h-fit bg-bg_light_primary" id="skills">
-      {/* <Model
+      {/* modal */}
+      {/* <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
       >
-
         <div className="flex items-center gap-2">
           <img className="h-10" src={selectSkill?.logo} alt="..." />
           <h6>{selectSkill?.name}</h6>
@@ -92,6 +88,7 @@ const Skills = () => {
                 gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
             >
               <div>
+               
                 <Image src={skill.logo} alt={""}/>
               </div>
               <div>

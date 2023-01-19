@@ -8,6 +8,8 @@ import Skills from "./Skills";
 import { useEffect } from "react";
 import Services from "./Sevicese";
 import Contact from "./contect";
+import Projects from "./projects";
+import Testimonials from "./testimonials";
 
 export default function Home() {
   // useEffect(() => {
@@ -19,12 +21,14 @@ export default function Home() {
   // }, []);
   return (
     <>
-      <Topbar />
-      {/* <Hero/> */}
-      <Skills/>
-      <Services/>
+     <Topbar />
+      <Hero />
+      <Skills />
+      <Services />
+      <Projects />
+      <Testimonials />
       <Hireme />
-      <Contact/>
+      <Contact />
       <footer className="p-3 text-center">
         <h6 className="mb-3">JOHN ALEX</h6>
         <p>codeaprogram © All CopyRights Reserved 2022</p>

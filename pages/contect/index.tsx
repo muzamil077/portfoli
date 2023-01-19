@@ -7,20 +7,18 @@ const Contact = () => {
   const { Contact } = content;
   const form = useRef();
 
-  // Sending Email
+ 
   const sendEmail = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-      'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
+      'name', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
       )
       .then(
         (result) => {
           console.log(result.text);
-          // Clear all input field values
           form.current.reset();
-          // Success toast message
           toast.success("Email send Successfully");
         },
         (error) => {
@@ -48,13 +46,13 @@ const Contact = () => {
             data-aos="fade-up"
             className="flex-1 flex flex-col gap-5"
           >
-            {/* Input Name as same as email js templates values */}
+          
             <input
               type="text"
               name="from_name"
               placeholder="Name"
               required
-              className="border border-slate-600 p-3 rounded"
+              className="border border-slate-600 p-3 rounded text-md font-bold "
             />
             <input
               type="email"
