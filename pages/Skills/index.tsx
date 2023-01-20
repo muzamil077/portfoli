@@ -3,7 +3,12 @@ import { createElement, useState } from "react";
 import { content } from "../../utills/Content";
 // import modal package
 // import Modal from "react-modal";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+interface skill {
+  name: string;
+  para: string;
+  logo: StaticImageData;
+}
 
 const customStyles = {
   content: {
@@ -22,10 +27,10 @@ const customStyles = {
 };
 // Modal.setAppElement("#root");
 
-const Skills = () => {
+const Skills = (orops : skill) => {
   const { skills } = content;
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [selectSkill, setSelectSkill] = useState("hello");
+  const [selectSkill, setSelectSkill] = useState();
 
   function openModal() {
     setIsOpen(true);
@@ -88,8 +93,7 @@ const Skills = () => {
                 gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
             >
               <div>
-               
-                <Image src={skill.logo} alt={""}/>
+                <Image src={skill.logo} alt={""} />
               </div>
               <div>
                 <h6>{skill.name}</h6>

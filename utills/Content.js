@@ -1,5 +1,5 @@
 // import images
-import Hero_person from "../src/assets/images/Hero/person.png";
+import Hero_person from "../src/assets/images/Hero/me.jpeg";
 import figma from "../src/assets/images/Skills/figma.png";
 import sketch from "../src/assets/images/Skills/sketch.png";
 import ps from "../src/assets/images/Skills/ps.png";
@@ -30,6 +30,7 @@ import { MdArrowForward, MdCall } from "react-icons/md";
 // import { BsInstagram } from "react-icons/bs";
 import {FaGithub} from "react-icons/fa"
 import { TbSmartHome } from "react-icons/tb";
+import {MdAddReaction} from "react-icons/md"
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
@@ -53,14 +54,18 @@ export const content = {
       icon: RiProjectorLine,
     },
     {
+      link: "#testimonials",
+      icon: MdAddReaction,
+    },
+    {
       link: "#contact",
       icon: MdOutlinePermContactCalendar,
     },
   ],
   hero: {
     title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
+    firstName: "MUZAMIL",
+    LastName: "HUSSAIN",
     btnText: "Hire Me",
     image: Hero_person,
     hero_content: [

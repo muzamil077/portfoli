@@ -13,11 +13,12 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-      'name', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
+      'service_0aexns9', 'template_pnpebp6', form.current, 'ckASLK0PJ4UrZkAUU'
       )
       .then(
         (result) => {
           console.log(result.text);
+          console.log("email submited successfully")
           form.current.reset();
           toast.success("Email send Successfully");
         },
@@ -49,7 +50,7 @@ const Contact = () => {
           
             <input
               type="text"
-              name="from_name"
+              name="user_name"
               placeholder="Name"
               required
               className="border border-slate-600 p-3 rounded text-md font-bold "
