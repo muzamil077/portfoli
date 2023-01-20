@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { content } from "../../utills/Content";
-
 import imgImg from "../assets/images/Services/logo3.png";
 
 const Services = () => {
@@ -8,7 +7,7 @@ const Services = () => {
   return (
     <section id="services">
       <div className="md:container px-5 py-14">
-        <h2 className="title" data-aos="fade-down">
+        <h2 className=" text-xl font-bold" data-aos="fade-down">
           {services.title}
         </h2>
         <h4 className="subtitle" data-aos="fade-down">

@@ -75,7 +75,7 @@ const Skills = (orops : skill) => {
 
       {/* content */}
       <div className="md:container px-5  py-14">
-        <h2 className="title" data-aos="fade-down">
+        <h2 className=" text-xl font-bold" data-aos="fade-down">
           {skills.title}
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
@@ -93,11 +93,11 @@ const Skills = (orops : skill) => {
                 gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
             >
               <div>
-                <Image src={skill.logo} alt={""} />
+                <Image width={100} src={skill.logo} alt={""} />
               </div>
               <div>
                 <h6>{skill.name}</h6>
-                <p className="italic">{skill.para}</p>
+                <p>{skill.para}</p>
                 <div
                   onClick={() => {
                     setSelectSkill(skill);

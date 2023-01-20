@@ -1,8 +1,10 @@
 // import images
 import Hero_person from "../src/assets/images/Hero/me.jpeg";
 import figma from "../src/assets/images/Skills/figma.png";
-import sketch from "../src/assets/images/Skills/sketch.png";
-import ps from "../src/assets/images/Skills/ps.png";
+import nextjs from "../src/assets/images/Skills/nextjs.png"
+import html from "../src/assets/images/Skills/html.png"
+
+import css from "../src/assets/images/Skills/css.png"
 import reactjs from "../src/assets/images/Skills/react.png";
 import nodejs from "../src/assets/images/Skills/node.png";
 import python from "../src/assets/images/Skills/python.png";
@@ -71,7 +73,7 @@ export const content = {
     hero_content: [
       {
         count: "8+",
-        text: "Years of Experinse in Web development",
+        text: "Years of Experinse in Front end development",
       },
       {
         count: "20+",
@@ -84,19 +86,14 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
-        name: "Figma",
+        name: "HTML",
         para: "Lorem ipsum text  dummy",
-        logo: figma,
+        logo: html
       },
       {
-        name: "Node js",
+        name: "CSS",
         para: "Lorem ipsum text  dummy",
-        logo: nodejs,
-      },
-      {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
+        logo: css,
       },
       {
         name: "React js",
@@ -104,9 +101,14 @@ export const content = {
         logo: reactjs,
       },
       {
-        name: "Sketch",
+        name: "Nextjs",
         para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        logo: nextjs,
+      },
+      {
+        name: "Node js",
+        para: "Lorem ipsum text  dummy",
+        logo: nodejs,
       },
       {
         name: "Python",

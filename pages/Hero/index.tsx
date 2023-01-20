@@ -14,14 +14,12 @@ const Hero = () => {
         >
           <h1 className="rotate-90 absolute top-[30%] right-[-15%] text-dark_primary">
             {hero.firstName}{" "}
-            <span className="text-dark_primary">{hero.LastName}</span>
+            <span className="text-blue-500">{hero.LastName}</span>
           </h1>
         </div>
-
         {/* first col */}
         <div className="pb-32  " data-aos="fade-down">
           <h2>{hero.title}</h2>
-        
           <br />
           <div className="flex  justify-end">
             <button className="btn">{hero.btnText}</button>

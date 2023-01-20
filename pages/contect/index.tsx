@@ -33,12 +33,13 @@ const Contact = () => {
     <section className="bg-dark_primary text-black" id="contact">
       <Toaster />
       <div className="md:container px-5 py-14">
-        <h2 className="title !text-white" data-aos="fade-down">
+        <h2 className="text-xl font-bold text-slate-100" data-aos="fade-down">
           {Contact.title}
         </h2>
-        <h4 className="subtitle" data-aos="fade-down">
+        <h4 className="subtitle text-white" data-aos="fade-down">
           {Contact.subtitle}
         </h4>
+     
         <br />
         <div className="flex gap-10 md:flex-row flex-col">
           <form
@@ -53,27 +54,27 @@ const Contact = () => {
               name="user_name"
               placeholder="Name"
               required
-              className="border border-slate-600 p-3 rounded text-md font-bold "
+              className="border  focus:outline-none border-slate-600 p-3 rounded text-md font-bold "
             />
             <input
               type="email"
               name="user_email"
               pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-              placeholder="Email Id"
+              placeholder="Email"
               required
-              className="border border-slate-600 p-3 rounded"
+              className="border focus:outline-none border-slate-600 p-3 rounded font-bold"
             />
             <textarea
               name="message"
-              placeholder="Message"
-              className="border border-slate-600 p-3 rounded h-44"
+              placeholder="Tell me What you want..."
+              className="border  focus:outline-none border-slate-600 p-3 rounded font-bold h-44"
               required
             ></textarea>
             <button
               className="btn self-start
-            bg-white text-dark_primary"
+            bg-blue-500 rounded-md p-2 text-dark_primary"
             >
-              Submit
+              Hit Me Up!
             </button>
           </form>
           <div className="flex-1 flex flex-col gap-5">
@@ -85,7 +86,7 @@ const Contact = () => {
                 className="flex items-center gap-2"
               >
                 <h4 className="text-white">{createElement(content.icon)}</h4>
-                <a className="font-Poppins" href={content.link} target="_blank" rel="noreferrer">
+                <a className="font-md text-white" href={content.link} target="_blank" rel="noreferrer">
                   {content.text}
                 </a>
               </div>

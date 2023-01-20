@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { content } from "../../utills/Content";
 import Image from "next/image";
 
@@ -8,17 +7,24 @@ const Hireme = () => {
   return (
     <section className="bg-bg_light_primary">
       <div className="md:container px-5 pt-14">
-        <h2 className="title" data-aos="fade-down">
+        <h2 className=" text-xl font-bold" data-aos="fade-down">
           {Hireme.title}
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
           {Hireme.subtitle}
         </h4>
         <br />
-        <div className="flex items-center md:flex-row flex-col-reverse ">
-          <Image width={300} height={500} src={Hireme.image1} alt={"hireme"} />
+        <div className="flex justify-around items-center md:flex-row flex-col-reverse ">
+          <div>
+            <Image
+              width={400}
+              height={400}
+              src={Hireme.image1}
+              alt={"hireme"}
+            />
+          </div>
 
-          <Image width={300} height={500} src={Hireme.image2} alt={"hireme"} />
+          {/* <Image width={300} height={500} src={Hireme.image2} alt={"hireme"} /> */}
 
           <div
             data-aos="fade-left"
@@ -27,7 +33,7 @@ const Hireme = () => {
           >
             <p className="leading-7">{Hireme.para}</p>
             <br />
-            <button className="btn bg-dark_primary text-white">
+            <button className="btn p-2 rounded-md bg-dark_primary text-white">
               {Hireme.btnText}
             </button>
           </div>

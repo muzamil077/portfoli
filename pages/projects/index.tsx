@@ -15,7 +15,7 @@ const Projects = () => {
     <section className="bg-bg_light_primary" id="projects">
       <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
         <div>
-          <h2 className="title" data-aos="fade-down">
+          <h2 className=" text-xl font-bold" data-aos="fade-down">
             {Projects.title}
           </h2>
           <h4 className="subtitle" data-aos="fade-down">
@@ -25,7 +25,7 @@ const Projects = () => {
         </div>
         <div className="flex items-center lg:flex-row flex-col-reverse gap-2">
           <div className="">
-            <Image width={1000} height={1000} src={Projects.image} alt={""} />
+            <Image width={500} height={500} src={Projects.image} alt={""} />
           </div>
           <Swiper
             pagination={{

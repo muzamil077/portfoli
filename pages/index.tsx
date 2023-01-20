@@ -5,13 +5,15 @@ import Hireme from "./Hireme";
 import Topbar from "../src/components/Topbar";
 import Hero from "./Hero";
 import Skills from "./Skills";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Services from "./Sevicese";
 import Contact from "./contect";
 import Projects from "./projects";
 import Testimonials from "./testimonials";
+import Preloader from "../src/components/preloader";
 
 export default function Home() {
+  const [contentLoaded, setContentLoaded] = useState(true);
   // useEffect(() => {
   //   Aos.init({
   //     duration: 1800,
@@ -21,17 +23,18 @@ export default function Home() {
   // }, []);
   return (
     <>
-     <Topbar />
+      {contentLoaded ? null : <Preloader />}
+      <Topbar />
       <Hero />
-      <Skills />
+      <Skills name={"msdfhjk"} para={"sd,gfjkh"} logo={",dfj"} />
       <Services />
       <Projects />
       <Testimonials />
       <Hireme />
       <Contact />
       <footer className="p-3 text-center">
-        <h6 className="mb-3">JOHN ALEX</h6>
-        <p>codeaprogram © All CopyRights Reserved 2022</p>
+        <h6 className="mb-3">MUZAMIL HUSSAIN</h6>
+        <p>MUZAMIL HUSSAIN © All CopyRights Reserved 2022</p>
       </footer>
     </>
   );

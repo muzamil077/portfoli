@@ -16,7 +16,7 @@ const Testimonials = () => {
   return (
     <section>
       <div className="md:container px-5 pt-14">
-        <h2 className="title" data-aos="fade-down">
+        <h2 className=" text-xl font-bold" data-aos="fade-down">
           {Testimonials.title}
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
