@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { content } from "../../utills/Content";
 const Hero = () => {
+  const ref = useRef()
   const { hero } = content;
 
   return (
@@ -18,20 +19,20 @@ const Hero = () => {
           </h1>
         </div>
         {/* first col */}
-        <div className="pb-32  " data-aos="fade-down">
-          <h2>{hero.title}</h2>
+        <div className="pb-40 sm:ml-5  " data-aos="fade-down">
+          <h2 className="text-xl font-nosifer  border-b-2">{hero.title}</h2>
           <br />
-          <div className="flex  justify-end">
-            <button className="btn">{hero.btnText}</button>
-          </div>
+          <div className="">
+            <button className="btn bg-dark_primary text-white p-2 rounded-sm font-semibold">{hero.btnText}</button>
+          </div> 
           <div className="flex flex-col gap-10 mt-10">
             {hero.hero_content.map((content, i) => (
               <div
                 key={i}
                 data-aos="fade-down"
                 data-aos-delay={i * 300}
-                className={`flex items-center w-80 gap-5
-            ${i === 1 && " flex-row-reverse text-right"}  `}
+                className={`flex items-center font-semibold w-80 gap-5
+            ${i === 100 && " flex-row-reverse text-right"}  `}
               >
                 <h3>{content.count}</h3>
                 <p>{content.text}</p>

@@ -24,7 +24,7 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-          toast.error(error.text);
+          toast.error("network Error, please connect to internet");
         }
       );
   };

@@ -9,6 +9,7 @@ module.exports = {
       Poppins: "Poppins",
       Paprika: "Paprika",
       Inria: "Inria Serif",
+      nosifer:"nosifer"
     },
     container: {
       center: true,

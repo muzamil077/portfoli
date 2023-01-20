@@ -65,14 +65,15 @@ export const content = {
     },
   ],
   hero: {
-    title: "Web Developer",
+    title: "Hi, I'm a freelance website designer",
     firstName: "MUZAMIL",
     LastName: "HUSSAIN",
+    link: "#contact",
     btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
       {
-        count: "8+",
+        count: "2+",
         text: "Years of Experinse in Front end development",
       },
       {
