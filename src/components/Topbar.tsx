@@ -8,7 +8,6 @@ const Topbar = () => {
   const { nav } = content
   const [showMenu, setShowMenu] = useState(false)
   const [active, setActive] = useState(0)
-
   return (
     <div className="w-full flex justify-center">
       <div
@@ -25,6 +24,7 @@ const Topbar = () => {
         {nav.map((item, i) => (
           // eslint-disable-next-line react/jsx-key
           <a
+          key={i}
             href={item.link}
             onClick={() => setActive(i)}
             className={`text-xl p-2.5 rounded-full sm:cursor-pointer 

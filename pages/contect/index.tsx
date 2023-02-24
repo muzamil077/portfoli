@@ -5,7 +5,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const { Contact } = content;
-  const form = useRef();
+  const form = useRef(null as any);
 
  
   const sendEmail = (e: { preventDefault: () => void; }) => {
@@ -82,7 +82,6 @@ const Contact = () => {
               <div
                 key={i}
                 data-aos="fade-down"
-                data-aos-delay={i * 430}
                 className="flex items-center gap-2"
               >
                 <h4 className="text-white">{createElement(content.icon)}</h4>

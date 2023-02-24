@@ -26,7 +26,7 @@ export default function Home() {
       {contentLoaded ? null : <Preloader />}
       <Topbar />
       <Hero />
-      <Skills name={"msdfhjk"} para={"sd,gfjkh"} logo={",dfj"} />
+      <Skills name={""} para={""} logo={""}/>
       <Services />
       <Projects />
       <Testimonials />
